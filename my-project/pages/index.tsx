@@ -1,11 +1,12 @@
 import React from 'react'
+import Nav from '../components/Nav'
 
-const index = () => {
+const Homepage = () => {
   return (
-    <div className="text-9xl text-gray-800">
-      myst3r10us
+    <div className="overflow-x-hidden">
+      <div><Nav/></div>
     </div>
   )
 }
 
-export default index
+export default Homepage

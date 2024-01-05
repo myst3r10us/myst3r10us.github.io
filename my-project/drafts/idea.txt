@@ -1,0 +1,20 @@
+import React from 'react'
+
+const Nav = () => {
+  return (
+    <nav className="w-full bg-gray-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex items-center">
+            <h1 className="text-white font-bold">Web<span className="text-blue-500">DEV</span></h1>
+            <a href="#" className="ml-4 text-gray-300 hover:text-white">Home</a>
+            {/* Add more navigation links here */}
+          </div>
+          {/* Add additional navigation elements here */}
+        </div>
+      </div>
+    </nav>
+  )
+}
+
+export default Nav
