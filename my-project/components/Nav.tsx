@@ -12,7 +12,7 @@ const Nav = ({openNav}:Props) => {
         <div className="nav-link">Home</div>
         <div className="nav-link">Who Are We?</div>
         <div className="nav-link">Writeups</div>
-        <div className="nav-link">Blog</div>
+        <div className="nav-link">Blogs</div>
         <div className="nav-link">Contact Us</div>
         <div onClick={openNav}>
           <Bars3Icon className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-blue-300"/>
