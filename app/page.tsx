@@ -1,10 +1,9 @@
 import Image from "next/image";
+import { Navigationbar } from "@/components/(navbar)/Navigationbar";
 
 export default function Home() {
     return (
-        <div className="text-justify text-white">
-            <h1>Test 123</h1>
-        </div>
+      <Navigationbar />
     );
 }
 
