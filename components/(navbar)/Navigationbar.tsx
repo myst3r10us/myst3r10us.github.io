@@ -12,44 +12,32 @@ import {
 import { cn } from "@/lib/utils"
 import Link from "next/link";
 import React from "react";
-import { Cat } from 'lucide-react';
+import { Cat, CatIcon, LucideIcon } from 'lucide-react'
 
 
-const components: { title: string; href: string; description: string }[] = [
+const components: {title: string; href: string; description: string }[] = [
     {
-        title: "Alert Dialog",
-        href: "/docs/primitives/alert-dialog",
+        title: "What is myst3r10us?",
+        href: "",
         description:
-            "A modal dialog that interrupts the user with important content and expects a response.",
+            "A Malaysian-based CTF team that starts in November 2023.",
     },
     {
-        title: "Hover Card",
-        href: "/docs/primitives/hover-card",
+        title: "Why myst3r10us?",
+        href: "",
         description:
-            "For sighted users to preview content available behind a link.",
+            "It started from 'Mysterious Three Flaggers' and it shorten to myst3r10us.",
     },
     {
-        title: "Progress",
-        href: "/docs/primitives/progress",
+        title: "Our CTFTime Team Profile",
+        href: "https://ctftime.org/team/277613",
         description:
-            "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+            "Check out how many CTFs we have participated in!",
     },
     {
-        title: "Scroll-area",
-        href: "/docs/primitives/scroll-area",
-        description: "Visually or semantically separates content.",
-    },
-    {
-        title: "Tabs",
-        href: "/docs/primitives/tabs",
-        description:
-            "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-    },
-    {
-        title: "Tooltip",
-        href: "/docs/primitives/tooltip",
-        description:
-            "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+        title: "Join myst3r10us",
+        href: "",
+        description: "Want to join the team? Contact us for further information!",
     },
 ];
 
@@ -80,19 +68,22 @@ export const Navigationbar = () => {
                             <NavigationMenuItem>
                                 <NavigationMenuTrigger className=" font-DMS">
                                     <span className="mr-2">
-                                        <Cat />
+                                       <CatIcon/>
                                     </span>
                                     About
                                 </NavigationMenuTrigger>
                                 <NavigationMenuContent>
-                                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                                    <ul className="grid w-[450px] gap-3 p-4 md:w-[500px] md:grid-cols-1 lg:w-[650px] ">
                                     {components.map((component) => (
                                         <ListItem
-                                        key={component.title}
-                                        title={component.title}
-                                        href={component.href}
+                                            key={component.title}
+                                            title={component.title}
+                                            href={component.href}
                                         >
-                                        {component.description}
+                                            <div className="flex items-center">
+                                                <CatIcon className="mr-2" />
+                                                <span>{component.description}</span>
+                                            </div>
                                         </ListItem>
                                     ))}
                                     </ul>
@@ -119,6 +110,7 @@ export const Navigationbar = () => {
                         Contact
                     </a>
                 </div>
+        
                 <div>
                     <a
                         href="#"
