@@ -1,0 +1,18 @@
+                    {/* <a
+                        href="#responsive-header"   
+                        className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
+                    >
+                        About
+                    </a> */}
+                    {/* <a
+                        href="#responsive-header"
+                        className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
+                    >
+                        Writeups
+                    </a>
+                    <a
+                        href="#responsive-header"
+                        className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
+                    >
+                        Contact
+                    </a> */}

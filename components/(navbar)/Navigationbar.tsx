@@ -10,9 +10,9 @@ import {
 } from "@/components/ui/navigation-menu";
 
 import { cn } from "@/lib/utils"
-import Link from "next/link";
+// import Link from "next/link";
 import React from "react";
-import { Cat, CatIcon, LucideIcon } from 'lucide-react'
+import { CatIcon, BookCheck, SquareUserRound } from 'lucide-react'
 
 
 const components: {title: string; href: string; description: string }[] = [
@@ -45,11 +45,11 @@ export const Navigationbar = () => {
     return (
         // bg-gray-800
         <div className="flex flex-wrap items-center justify-between p-5 dark:bg-slate-800">
-            <div className="flex items-center flex-shrink-0 mr-10 gap-x-5 text-white">
+            <div className="flex items-center flex-shrink-0 mr-10 gap-5 text-white">
                 <span className="text-xl font-semibold tracking-tight px-10 gap-5">myst3r10us</span>
             </div>
             <div className="block lg:hidden">
-                <button className="flex items-center px-3 py-2 text-white border border-white rounded hover:text-white hover:border-white">
+                <button className="flex items-center px-5 py-5 mb-5 text-white border border-white rounded hover:text-white hover:border-white">
                     <svg
                         className="w-3 h-3 fill-current"
                         viewBox="0 0 20 20"
@@ -62,7 +62,7 @@ export const Navigationbar = () => {
                 </button>
             </div>
             <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                <div className="text-sm flex-row flex gap-x-10 lg:flex-grow mr-5 lg:mt-0">
+                <div className="text-sm flex-row flex gap-x-8 lg:flex-grow mr-5 lg:mt-0">
                     <NavigationMenu>
                         <NavigationMenuList >
                             <NavigationMenuItem>
@@ -91,48 +91,34 @@ export const Navigationbar = () => {
                             </NavigationMenuItem>
                         </NavigationMenuList>
                     </NavigationMenu>
-                    {/* <a
-                        href="#responsive-header"   
-                        className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
-                    >
-                        About
-                    </a> */}
-                    {/* <a
-                        href="#responsive-header"
-                        className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
-                    >
-                        Writeups
-                    </a>
-                    <a
-                        href="#responsive-header"
-                        className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
-                    >
-                        Contact
-                    </a> */}
+
                     <NavigationMenu>
                         <NavigationMenuList>
                             <NavigationMenuItem>
                                 <NavigationMenuTrigger className="text-lg font-DMS">
                                     <span className="mr-3">
-                                       <CatIcon/>
+                                       <BookCheck/>
                                     </span>
-                                    About
+                                    Writeups
                                 </NavigationMenuTrigger>
                                 <NavigationMenuContent>
-                                    <ul className="grid w-[450px] gap-3 p-4 md:w-[500px] md:grid-cols-1 lg:w-[650px] ">
-                                    {components.map((component) => (
-                                        <ListItem
-                                            key={component.title}
-                                            title={component.title}
-                                            href={component.href}
-                                        >
-                                            <div className="flex items-center">
-                                                <CatIcon className="mr-2" />
-                                                <span>{component.description}</span>
-                                            </div>
-                                        </ListItem>
-                                    ))}
-                                    </ul>
+                    
+                                </NavigationMenuContent>
+                            </NavigationMenuItem>
+                        </NavigationMenuList>
+                    </NavigationMenu>
+
+                    <NavigationMenu>
+                        <NavigationMenuList>
+                            <NavigationMenuItem>
+                                <NavigationMenuTrigger className="text-lg font-DMS">
+                                    <span className="mr-3">
+                                       <SquareUserRound />
+                                    </span>
+                                    Contact Us
+                                </NavigationMenuTrigger>
+                                <NavigationMenuContent>
+                    
                                 </NavigationMenuContent>
                             </NavigationMenuItem>
                         </NavigationMenuList>
