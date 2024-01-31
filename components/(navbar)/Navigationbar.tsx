@@ -61,12 +61,11 @@ export const Navigationbar = () => {
                 </button>
             </div>
             <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-
                 <div className="text-sm lg:flex-grow block mt-4 mr-4lg:inline-block lg:mt-0">
                     <NavigationMenu>
                         <NavigationMenuList>
                             <NavigationMenuItem>
-                                <NavigationMenuTrigger className=" font-DMS">
+                                <NavigationMenuTrigger className="text-lg font-DMS">
                                     <span className="mr-2">
                                        <CatIcon/>
                                     </span>
