@@ -43,9 +43,10 @@ const components: {title: string; href: string; description: string }[] = [
 
 export const Navigationbar = () => {
     return (
-        <div className="flex flex-wrap items-center justify-between p-5 bg-gray-800">
-            <div className="flex items-center flex-shrink-0 mr-6 text-white">
-                <span className="text-xl font-semibold tracking-tight">myst3r10us</span>
+        // bg-gray-800
+        <div className="flex flex-wrap items-center justify-between p-5 dark:bg-slate-800">
+            <div className="flex items-center flex-shrink-0 mr-10 gap-x-5 text-white">
+                <span className="text-xl font-semibold tracking-tight px-10 gap-5">myst3r10us</span>
             </div>
             <div className="block lg:hidden">
                 <button className="flex items-center px-3 py-2 text-white border border-white rounded hover:text-white hover:border-white">
@@ -61,12 +62,12 @@ export const Navigationbar = () => {
                 </button>
             </div>
             <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                <div className="text-sm lg:flex-grow block mt-4 mr-4lg:inline-block lg:mt-0">
+                <div className="text-sm flex-row flex gap-x-10 lg:flex-grow mr-5 lg:mt-0">
                     <NavigationMenu>
-                        <NavigationMenuList>
+                        <NavigationMenuList >
                             <NavigationMenuItem>
                                 <NavigationMenuTrigger className="text-lg font-DMS">
-                                    <span className="mr-2">
+                                    <span className="mr-3">
                                        <CatIcon/>
                                     </span>
                                     About
@@ -96,7 +97,7 @@ export const Navigationbar = () => {
                     >
                         About
                     </a> */}
-                    <a
+                    {/* <a
                         href="#responsive-header"
                         className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
                     >
@@ -107,7 +108,35 @@ export const Navigationbar = () => {
                         className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
                     >
                         Contact
-                    </a>
+                    </a> */}
+                    <NavigationMenu>
+                        <NavigationMenuList>
+                            <NavigationMenuItem>
+                                <NavigationMenuTrigger className="text-lg font-DMS">
+                                    <span className="mr-3">
+                                       <CatIcon/>
+                                    </span>
+                                    About
+                                </NavigationMenuTrigger>
+                                <NavigationMenuContent>
+                                    <ul className="grid w-[450px] gap-3 p-4 md:w-[500px] md:grid-cols-1 lg:w-[650px] ">
+                                    {components.map((component) => (
+                                        <ListItem
+                                            key={component.title}
+                                            title={component.title}
+                                            href={component.href}
+                                        >
+                                            <div className="flex items-center">
+                                                <CatIcon className="mr-2" />
+                                                <span>{component.description}</span>
+                                            </div>
+                                        </ListItem>
+                                    ))}
+                                    </ul>
+                                </NavigationMenuContent>
+                            </NavigationMenuItem>
+                        </NavigationMenuList>
+                    </NavigationMenu>
                 </div>
         
                 <div>
