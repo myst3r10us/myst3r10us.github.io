@@ -44,6 +44,32 @@ const components: {title: string; href: string; description: string }[] = [
     },
 ];
 
+const components2: {title: string; href: string; description: string }[] = [
+    {
+        title: "What is myst3r10us?",
+        href: "",
+        description:
+            "A Malaysian-based CTF team that starts in November 2023.",
+    },
+    {
+        title: "Why myst3r10us?",
+        href: "",
+        description:
+            "It started from 'Mysterious Three Flaggers' and it shorten to myst3r10us.",
+    },
+    {
+        title: "Our CTFTime Team Profile",
+        href: "https://ctftime.org/team/277613",
+        description:
+            "Check out how many CTFs we have participated in!",
+    },
+    {
+        title: "Join myst3r10us",
+        href: "",
+        description: "Want to join the team? Contact us for further information!",
+    },
+];
+
 export const Navigationbar = () => {
     return (
         // bg-gray-800
@@ -65,7 +91,7 @@ export const Navigationbar = () => {
                 </button>
             </div>
             <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                <div className="text-sm flex-row flex gap-x-8 lg:flex-grow mr-5 lg:mt-0">
+                <div className="text-sm flex-row flex gap-x-8 lg:flex-grow mr-5 lg:mt-0 justify-end">
                     <NavigationMenu>
                         <Link href="/about" legacyBehavior passHref>
                         <NavigationMenuList >
@@ -108,7 +134,20 @@ export const Navigationbar = () => {
                                     Writeups
                                 </NavigationMenuTrigger>
                                 <NavigationMenuContent>
-                                        
+                                    <ul className="grid w-[450px] gap-3 p-4 md:w-[500px] md:grid-cols-1 lg:w-[650px] ">
+                                    {components2.map((component2) => (
+                                        <ListItem
+                                            key={component2.title}
+                                            title={component2.title}
+                                            href={component2.href}
+                                        >
+                                            <div className="flex items-center">
+                                                <CatIcon className="mr-2" />
+                                                <span>{component2.description}</span>
+                                            </div>
+                                        </ListItem>
+                                    ))}
+                                    </ul>         
                                 </NavigationMenuContent>
                             </NavigationMenuItem>
                         </NavigationMenuList>
@@ -125,15 +164,16 @@ export const Navigationbar = () => {
                             </Link>
                         </NavigationMenuList>
                     </NavigationMenu>
-                </div>
+
         
-                <div>
-                    <a
-                        href="#"
-                        className="inline-block px-4 py-2 mt-4 mr-4 text-sm font-semibold leading-none text-white border border-white rounded hover:border-transparent hover:text-gray-800 hover:bg-white lg:mt-0"
-                    >
-                        Subscribe
-                    </a>
+                    <div>
+                        <a
+                            href="#"
+                            className="inline-block px-6 py-3 mt-4 mr-4 text-sm font-semibold leading-none text-white border border-white rounded hover:border-transparent hover:text-gray-800 hover:bg-white lg:mt-0"
+                        >
+                            Subscribe
+                        </a>
+                    </div>  
                 </div>
             </div>
         </div>
