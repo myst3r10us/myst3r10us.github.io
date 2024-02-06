@@ -115,7 +115,8 @@ export const Navigationbar = () => {
                         <NavigationMenuList>    
                             <Link href="/about" legacyBehavior passHref>
                                 <NavigationMenuLink className={navigationMenuTriggerStyle()} >
-                                    <UserRoundSearch className="text-lg font-DMS mr-3" /> Contact Us
+                                    <UserRoundSearch className="mr-3" />
+                                    <span className="text-lg font-DMS">Contact Us</span> 
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuList>
