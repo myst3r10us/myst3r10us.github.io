@@ -169,7 +169,7 @@ export const Navigationbar = () => {
                     <div>
                         <a
                             href="#"
-                            className="inline-block px-6 py-3 mt-4 mr-4 text-sm font-semibold leading-none text-white border border-white rounded hover:border-transparent hover:text-gray-800 hover:bg-white lg:mt-0"
+                               className="inline-block px-6 py-3 mt-4 mr-4 text-sm font-semibold leading-none text-white border-2 border-white rounded hover:border-transparent hover:text-gray-800 hover:bg-white lg:mt-0"
                         >
                             Subscribe
                         </a>
