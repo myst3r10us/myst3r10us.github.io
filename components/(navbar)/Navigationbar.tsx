@@ -1,19 +1,21 @@
-    "use client"; // top to the file
+"use client"; // top to the file
+
+import Link from "next/link";
 
 import {
-    NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
-    NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
-
-
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu"
+ 
 import { cn } from "@/lib/utils"
 // import Link from "next/link";
 import React from "react";
-import { CatIcon, BookCheck, SquareUserRound } from 'lucide-react'
+import { CatIcon, BookCheck, SquareUserRound, UserRoundSearch} from 'lucide-react'
 
 
 const components: {title: string; href: string; description: string }[] = [
@@ -110,18 +112,12 @@ export const Navigationbar = () => {
                     </NavigationMenu>
 
                     <NavigationMenu>
-                        <NavigationMenuList>
-                            <NavigationMenuItem>
-                                <NavigationMenuTrigger className="text-lg font-DMS">
-                                    <span className="mr-3">
-                                       <SquareUserRound />
-                                    </span>
-                                    Contact Us
-                                </NavigationMenuTrigger>
-                                <NavigationMenuContent>
-                    
-                                </NavigationMenuContent>
-                            </NavigationMenuItem>
+                        <NavigationMenuList>    
+                            <Link href="/about" legacyBehavior passHref>
+                                <NavigationMenuLink className={navigationMenuTriggerStyle()} >
+                                    <UserRoundSearch className="text-lg font-DMS mr-3" /> Contact Us
+                                </NavigationMenuLink>
+                            </Link>
                         </NavigationMenuList>
                     </NavigationMenu>
                 </div>
