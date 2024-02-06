@@ -67,6 +67,7 @@ export const Navigationbar = () => {
             <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                 <div className="text-sm flex-row flex gap-x-8 lg:flex-grow mr-5 lg:mt-0">
                     <NavigationMenu>
+                        <Link href="/about" legacyBehavior passHref>
                         <NavigationMenuList >
                             <NavigationMenuItem>
                                 <NavigationMenuTrigger className="text-lg font-DMS">
@@ -93,9 +94,11 @@ export const Navigationbar = () => {
                                 </NavigationMenuContent>
                             </NavigationMenuItem>
                         </NavigationMenuList>
-                    </NavigationMenu>
+                    </Link>
+                </NavigationMenu>
 
                     <NavigationMenu>
+                        <Link href="/writeups" legacyBehavior passHref>
                         <NavigationMenuList>
                             <NavigationMenuItem>
                                 <NavigationMenuTrigger className="text-lg font-DMS">
@@ -105,15 +108,16 @@ export const Navigationbar = () => {
                                     Writeups
                                 </NavigationMenuTrigger>
                                 <NavigationMenuContent>
-                    
+                                        
                                 </NavigationMenuContent>
                             </NavigationMenuItem>
                         </NavigationMenuList>
+                      </Link>
                     </NavigationMenu>
 
                     <NavigationMenu>
                         <NavigationMenuList>    
-                            <Link href="/about" legacyBehavior passHref>
+                            <Link href="/contact" legacyBehavior passHref>
                                 <NavigationMenuLink className={navigationMenuTriggerStyle()} >
                                     <UserRoundSearch className="mr-3" />
                                     <span className="text-lg font-DMS">Contact Us</span> 
