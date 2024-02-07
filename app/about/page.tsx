@@ -33,8 +33,8 @@ const About = () => {
   return (
     <div className=" bg-slate-900 min-h-screen">
       <Navigationbar />
-      <div className="container mx-auto py-8">
-        <h1 className="text-5xl font-bold mb-16 text-center">About myst3r10us</h1>
+      <div className="container mx-auto py-8 mb-20">
+        <h1 className="text-5xl font-bold mt-10 mb-20 text-center underline">About myst3r10us</h1>
         {components.map((component, index) => (
           <div key={index} className="mb-8">
             <h2 className="text-2xl font-bold mb-2">{component.title}</h2>
