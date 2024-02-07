@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navigationbar } from '@/components/(navbar)/Navigationbar';
+import { FooterPage } from "@/components/(footer)/Footer";
 
 const components: { title: string; href: string; description: string }[] = [
   { 
@@ -49,6 +50,7 @@ const About = () => {
           </div>
         ))}
       </div>
+      <FooterPage />
     </div>
   );
 };

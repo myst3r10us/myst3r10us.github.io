@@ -75,7 +75,9 @@ export const Navigationbar = () => {
         // bg-gray-800
         <div className="flex flex-wrap items-center justify-between p-5 dark:bg-slate-800">
             <div className="flex items-center flex-shrink-0 mr-10 gap-5 text-white">
-                <span className="text-xl font-semibold tracking-tight px-10 gap-5">myst3r10us</span>
+                <Link href="/" legacyBehavior passHref>
+                    <span className="text-xl font-semibold tracking-tight px-10 gap-5">myst3r10us</span>
+                </Link>
             </div>
             <div className="block lg:hidden">
                 <button className="flex items-center px-5 py-5 mb-5 text-white border border-white rounded hover:text-white hover:border-white">
