@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navigationbar } from '@/components/(navbar)/Navigationbar';
 import { FooterPage } from "@/components/(footer)/Footer";
+import { DatabaseZap } from 'lucide-react'
 
 const components: { title: string; href: string; description: string }[] = [
   { 
@@ -34,7 +35,16 @@ const About = () => {
     <div className=" bg-slate-900 min-h-screen">
       <Navigationbar />
       <div className="container mx-auto py-8 mb-20">
-        <h1 className="text-5xl font-bold mt-10 mb-20 text-center underline">About myst3r10us</h1>
+        <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center">
+            <h1 className="text-5xl flex flex-row-2 font-bold mt-10 mb-20 text-center underline">
+              <DatabaseZap size={48} className="mr-2 underline" />
+              <span className="mr-10">
+                About myst3r10us
+              </span>
+            </h1>
+          </div>
+        </div>
         {components.map((component, index) => (
           <div key={index} className="mb-8">
             <h2 className="text-2xl font-bold mb-2">{component.title}</h2>
