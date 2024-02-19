@@ -2,6 +2,7 @@ import React from 'react';
 import { Navigationbar } from '@/components/(navbar)/Navigationbar';
 import { FooterPage } from "@/components/(footer)/Footer";
 import { DatabaseZap } from 'lucide-react'
+import Image from 'next/image'
 
 const components: { title: string; href: string; description: string }[] = [
   { 
@@ -35,6 +36,15 @@ const About = () => {
     <div className=" bg-slate-900 min-h-screen">
       <Navigationbar />
       <div className="container mx-auto py-8 mb-20">
+        <div className="flex items-center justify-center">
+          <Image
+            src="https://i.imgur.com/jtcMGsC.jpg"
+            unoptimized
+            alt="myst3r10us"
+            width={300}
+            height={300}
+          />
+        </div>
         <div className="flex items-center justify-center">
           <div className="flex items-center justify-center">
             <h1 className="text-5xl flex flex-row-2 font-bold mt-10 mb-20 text-center underline">
