@@ -1,16 +1,15 @@
 import React from 'react'
 import { Navigationbar } from "@/components/(navbar)/Navigationbar";
-import { ContactPage } from "@/components/(contact)/Contact";
 import { FooterPage } from "@/components/(footer)/Footer";
 
-const Contact = () => {
+const Home = () => {
   return (
     <div>
       <Navigationbar />
-      <ContactPage />
-      <FooterPage />  
+        Home
+      <FooterPage />
     </div>
   )
 }
 
-export default Contact;
+export default Home
