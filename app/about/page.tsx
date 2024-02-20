@@ -35,13 +35,16 @@ const About = () => {
   return (
     <div className=" bg-slate-900 min-h-screen">
       <Navigationbar />
-      <div className="container mx-auto py-8 mb-20">
-        <div className="flex items-center justify-center">
+      <div className="container mx-auto py-8">
+        <div className="flex items-center justify-center bg-slate-700 mb-16">
           <div className="flex items-center justify-center">
             <h1 className="text-6xl flex items-center justify-center flex-row-2 font-bold mt-10 mb-20 text-center underline">
-              <DatabaseZap size={90 } className="items-center justify-center mr-2 underline" />
-              <span className="mr-10">
-                About myst3r10us
+              <DatabaseZap size={90} className="items-center justify-center mr-2 underline text-slate-100" />
+              <span className="mr-10 text-slate-100">
+                About
+                <span className="text-slate-400">
+                &nbsp;myst3r10us
+                </span>
               </span>
             </h1>
           </div>
@@ -52,7 +55,7 @@ const About = () => {
               alt="myst3r10us"
               width={300}
               height={300}
-              className="mb-16 py-4"
+              className="py-8"
             />
           </div>
         </div>
