@@ -167,18 +167,19 @@ export const Navigationbar = () => {
                                 </NavigationMenuTrigger>
                             <NavigationMenuContent>
                                 {/* <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]"> */}
-                                <ul className="grid gap-x-3 p-4 md:w-[220px] md:h-[230px] lg:w-[265px] lg:grid-cols-[.5fr_1fr] justify-between">
+                                <ul className="grid gap-x-3 p-4 md:w-[350px] md:h-[175px] lg:w-[350px] lg:grid-cols-[.5fr_1fr] justify-between">
                                 <li className="row-auto">
                                     <NavigationMenuLink asChild>
                                     <a
                                         className="flex h-full w-full select-none flex-wrap justify-between rounded-md bg-gradient-to-b from-muted/50 to-muted py-2 px-16 no-underline outline-none focus:shadow-md"
                                         href="/writeups"
                                     >
-                                        <div className="gap-y-3 text-left mb-2 mt-4 mr-6 text-lg font-medium">
+                                        <div className="gap-y-3 text-left mb-2 mt-4 mr-6 text-lg font-medium w-[350px] lg:w-[350px]">
                                         <SquarePen className="mr-2"/> 
                                         <span>Writeups</span>
-                                            <p className="items-justify flex h-full w-full text-sm leading-tight text-left text-muted-foreground">
-                                                Solved Challenges With Writeups. Check them out~
+                                            <p className="items-justify h-full w-full text-sm leading-tight text-left text-muted-foreground">
+                                                Solved Challenges With Writeups. <br></br>
+                                                Check them out~
                                             </p>
                                         </div>
 
