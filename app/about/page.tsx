@@ -37,28 +37,29 @@ const About = () => {
       <Navigationbar />
       <div className="container mx-auto py-8 mb-20">
         <div className="flex items-center justify-center">
-          <Image
-            src="https://i.imgur.com/jtcMGsC.jpg"
-            unoptimized
-            alt="myst3r10us"
-            width={300}
-            height={300}
-          />
-        </div>
-        <div className="flex items-center justify-center">
           <div className="flex items-center justify-center">
-            <h1 className="text-5xl flex flex-row-2 font-bold mt-10 mb-20 text-center underline">
-              <DatabaseZap size={48} className="mr-2 underline" />
+            <h1 className="text-6xl flex items-center justify-center flex-row-2 font-bold mt-10 mb-20 text-center underline">
+              <DatabaseZap size={90 } className="items-center justify-center mr-2 underline" />
               <span className="mr-10">
                 About myst3r10us
               </span>
             </h1>
           </div>
+          <div className="flex items-center justify-center">
+            <Image
+              src="https://i.imgur.com/jtcMGsC.jpg"
+              unoptimized
+              alt="myst3r10us"
+              width={300}
+              height={300}
+              className="mb-16 py-4"
+            />
+          </div>
         </div>
         {components.map((component, index) => (
-          <div key={index} className="mb-8">
-            <h2 className="text-2xl font-bold mb-2">{component.title}</h2>
-            <p className="  text-cyan-500 mb-4">{component.description}</p>
+          <div key={index} className="mb-16">
+            <h2 className="text-3xl font-bold mb-2">{component.title}</h2>
+            <p className=" text-lg text-cyan-500 mb-4">{component.description}</p>
             {component.href && (
               <a
                 href={component.href}
