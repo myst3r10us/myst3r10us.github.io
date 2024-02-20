@@ -167,16 +167,16 @@ export const Navigationbar = () => {
                                 </NavigationMenuTrigger>
                             <NavigationMenuContent>
                                 {/* <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]"> */}
-                                <ul className="grid gap-x-3 p-4 md:w-[350px] md:h-[175px] lg:w-[350px] lg:grid-cols-[.5fr_1fr] justify-between">
+                                <ul className="grid gap-x-3 p-4 md:w-[395px] md:h-[175px] lg:w-[395px] lg:grid-cols-[.5fr_1fr] justify-between">
                                 <li className="row-auto">
                                     <NavigationMenuLink asChild>
                                     <a
-                                        className="flex h-full w-full select-none flex-wrap justify-between rounded-md bg-gradient-to-b from-muted/50 to-muted py-2 px-16 no-underline outline-none focus:shadow-md"
+                                        className="flex h-full w-full select-none flex-wrap justify-between rounded-md bg-gradient-to-b from-muted/50 to-muted py-2 px-10 no-underline outline-none focus:shadow-md"
                                         href="/writeups"
                                     >
-                                        <div className="gap-y-3 text-left mb-2 mt-4 mr-6 text-lg font-medium w-[350px] lg:w-[350px]">
+                                        <div className="gap-y-3 text-left mb-2 mt-4 mr-6 text-lg font-medium w-[255px] lg:w-[255px]">
                                         <SquarePen className="mr-2"/> 
-                                        <span>Writeups</span>
+                                        <span className="mb-4">myst3r10us&apos;&nbsp;Writeups</span>
                                             <p className="items-justify h-full w-full text-sm leading-tight text-left text-muted-foreground">
                                                 Solved Challenges With Writeups. <br></br>
                                                 Check them out~
