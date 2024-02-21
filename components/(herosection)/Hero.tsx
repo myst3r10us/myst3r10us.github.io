@@ -21,9 +21,9 @@ export const HeroSection: React.FC = () => {
             }}
         >
             <div>
-                <h1 style={{ fontSize: '48px', marginBottom: '20px' }}>Big Heading</h1>
-                <h3 style={{ fontSize: '24px', marginBottom: '10px' }}>Subheading</h3>
-                <p style={{ fontSize: '16px', marginBottom: '0p x' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h1 style={{ fontSize: '48px', marginBottom: '20px' }}>Hello, Hackers.</h1>
+                <h3 style={{ fontSize: '24px', marginBottom: '10px' }}>Welcome to myst3r10us!</h3>
+                <p style={{ fontSize: '16px', marginBottom: '30px' }}>Nothing to see.</p>
             </div>
             <Image src={avatar} alt="Side Image" width={400} height={400} />
         </div>
