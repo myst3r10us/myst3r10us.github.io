@@ -9,7 +9,9 @@ export const HeroSection: React.FC = () => {
             style={{    
                 backgroundImage: `url(${bg.src})`,
                 width: '100%',
-                height: '100%',
+                height: '90vh',
+                left: '0',
+                top: '250px', // Adjust the value to move the image down
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
@@ -21,7 +23,7 @@ export const HeroSection: React.FC = () => {
             <div>
                 <h1 style={{ fontSize: '48px', marginBottom: '20px' }}>Big Heading</h1>
                 <h3 style={{ fontSize: '24px', marginBottom: '10px' }}>Subheading</h3>
-                <p style={{ fontSize: '16px', marginBottom: '30px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p style={{ fontSize: '16px', marginBottom: '0p x' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <Image src={avatar} alt="Side Image" width={400} height={400} />
         </div>
