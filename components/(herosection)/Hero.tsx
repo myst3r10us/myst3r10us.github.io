@@ -1,20 +1,21 @@
 import React from 'react';
 import Image from 'next/image';
-import bg from '../assets/background.png';
 import avatar from '../assets/avatar.jpg';
+import bg from '../assets/background.png';
 
 export const HeroSection: React.FC = () => {
     return (
         <div
-            style={{
-                backgroundImage: bg.toString(),
+            style={{    
+                backgroundImage: `url(${bg.src})`,
+                width: '100%',
+                height: '100%',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'space-between',
-                padding: '50px',
             }}
         >
             <div>
@@ -22,7 +23,7 @@ export const HeroSection: React.FC = () => {
                 <h3 style={{ fontSize: '24px', marginBottom: '10px' }}>Subheading</h3>
                 <p style={{ fontSize: '16px', marginBottom: '30px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-            <Image src={avatar} alt="Side Image" width={300} height={300} />
+            <Image src={avatar} alt="Side Image" width={400} height={400} />
         </div>
     );
 };
