@@ -5,7 +5,7 @@ export const HeroSection: React.FC = () => {
     return (
         <div
             style={{
-                backgroundImage: `url('/path/to/background-image.jpg')`,
+                backgroundImage: `url('./assets/background.png')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
@@ -20,7 +20,7 @@ export const HeroSection: React.FC = () => {
                 <h3 style={{ fontSize: '24px', marginBottom: '10px' }}>Subheading</h3>
                 <p style={{ fontSize: '16px', marginBottom: '30px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-            <img src="/path/to/side-image.jpg" alt="Side Image" style={{ width: '300px' }} />
+            <Image src="/assets/avatar.jpg" alt="Side Image" width={300} height={300} />
         </div>
     );
 };
