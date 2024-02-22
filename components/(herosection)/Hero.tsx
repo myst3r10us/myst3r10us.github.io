@@ -1,7 +1,10 @@
+"use client";
+
 import React from 'react';
 import Image from 'next/image';
 import avatar from '../assets/avatar.jpg';
 import bg from '../assets/background.png';
+import { motion } from 'framer-motion';
 
 export const HeroSection: React.FC = () => {
     return (
@@ -33,8 +36,10 @@ export const HeroSection: React.FC = () => {
                 <p style={{ fontSize: '1.25em', marginBottom: '30px', fontStyle: 'italic', top: "0", left: "50px", position: "relative" }} className="text-center tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-600">We like to solve CTF Challenges</p>
             </div>
             <div style={{ position: 'relative', left: '-100px' }}>
-                <Image src={avatar} alt="Side Image" width={400} height={400} style={{ animation: 'slide-in 5s forwards' }} />
-            </div>
+                <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+                    <Image src={avatar} alt="Side Image" width={400} height={400} style={{ animation: 'slide-in 5s forwards' }} />
+                </motion.div>
+            </div>2
         </div>
     );
 };
