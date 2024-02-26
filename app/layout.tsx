@@ -9,7 +9,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Home | myst3r10us",
+  title: "myst3r10us CTF Malaysia",
   description: "Welcome to myst3r10us CTF website",
 };
 
