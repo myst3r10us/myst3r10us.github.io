@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider"
 
 
+
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="./avatar.jpg" sizes="any" />
+        <link rel="icon" href="/avatar.jpg" sizes="any" />
         <link
           rel="icon"
           href="/icon?<generated>"
