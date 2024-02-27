@@ -39,7 +39,7 @@ export const HeroSection: React.FC = () => {
                 <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                     <Image src={avatar} alt="Side Image" width={400} height={400} style={{ animation: 'slide-in 5s forwards' }} />
                 </motion.div>
-            </div>2
+            </div>
         </div>
     );
 };
