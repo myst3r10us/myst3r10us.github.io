@@ -38,7 +38,7 @@ const WriteupOnePage = () => {
                 width={400}
                 height={400}
                 unoptimized
-                className="rounded-2xl mt-12 text-center"
+                className="rounded-2xl mt-24 text-center"
             />
             <p className=" text-justify text-wrap text-lg font-DMS w-3/5 h-48">
                 <br/><br/>Using the information and same idea to find the right answer from the correct answer (from the bot) and you will get something like what I did.
@@ -49,7 +49,7 @@ const WriteupOnePage = () => {
                 width={400}
                 height={400}
                 unoptimized
-                className="rounded-2xl mt-12 text-center"
+                className="rounded-2xl text-center"
             />
             <Image
                 src="https://i.imgur.com/4o2lwlm.png"
@@ -60,7 +60,8 @@ const WriteupOnePage = () => {
                 className="rounded-2xl mt-12 text-center"
             />
                 <p className=" text-justify text-wrap text-lg font-DMS w-3/5 h-48">
-                    <br/><br/>Doing of all that, you just need to convert the binary to ASCII and you will get the flag. The flag is <span className="font-bold">SKR_N0_On3_Und3rst4ndS_Qu4ntum</span> 
+                    <br/><br/>Doing of all that, you just need to convert the binary to ASCII using any binary to ASCII converter (RapidTables) and you will get the flag. The flag is <span className="font-bold">SKR&#123;R1gh7_or_Wr0nG&#125;</span>
+
                 </p>     
         </div>
     );
