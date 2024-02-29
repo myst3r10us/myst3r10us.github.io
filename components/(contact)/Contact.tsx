@@ -1,3 +1,5 @@
+"use client";
+
 import axios from 'axios';
 import React, { useState, FormEvent } from 'react';
 
@@ -56,26 +58,53 @@ export const ContactPage: React.FC = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className='emailForm'>
-            <input
-                type="text"
-                placeholder="Your Name"
-                value={name}
-                onChange={handleNameChange}
-            />
-            <input
-                type="email"
-                placeholder="Your Email"
-                value={email}
-                onChange={handleEmailChange}
-            />
-            <textarea
-                cols={30}
-                rows={10}
-                value={message}
-                onChange={handleMessageChange}
-            />
-            <button type="submit">Send Email</button>
+        <form onSubmit={handleSubmit} className='w-full max-w-sm mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-36 mt-20'>
+            <div className='mb-4'>
+                <label className='block text-gray-500 font-bold mb-1' htmlFor='name'>
+                    Your Name
+                </label>
+                <input
+                    className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+                    id='name'
+                    type='text'
+                    placeholder='Your Name'
+                    value={name}
+                    onChange={handleNameChange}
+                />
+            </div>
+            <div className='mb-4'>
+                <label className='block text-gray-500 font-bold mb-1' htmlFor='email'>
+                    Your Email
+                </label>
+                <input
+                    className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+                    id='email'
+                    type='email'
+                    placeholder='Your Email'
+                    value={email}
+                    onChange={handleEmailChange}
+                />
+            </div>
+            <div className='mb-4'>
+                <label className='block text-gray-500 font-bold mb-1' htmlFor='message'>
+                    Message
+                </label>
+                <textarea
+                    className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+                    id='message'
+                    cols={30}
+                    rows={10}
+                    placeholder='Your Message'
+                    value={message}
+                    onChange={handleMessageChange}
+                />
+            </div>
+            <button
+                type='submit'
+                className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'
+            >
+                Send Email
+            </button>
         </form>
     );
 };

@@ -42,7 +42,7 @@ return (
                     </div>
                 </div>
             </div>
-            <Footer.Divider/>
+            {/* <Footer.Divider/> */}
             <div className="flex mt-10 items-center w-full sm:flex sm:items-center sm:justify-between">
                 <Footer.Copyright href="#" by="myst3r10us" year={2024} />
                 <div className="flex space-x-6 sm:mt-0 sm:justify-center">
