@@ -43,9 +43,11 @@ export const ContactPage: React.FC = () => {
             setEmail('');
             setMessage('');
             toast.success('Email sent successfully!');
+            window.alert("Email sent successfully!")
         } catch (error) {
             console.error(error);
             toast.error('Failed to send email.');
+            window.alert("Failed to send email.")
         }
     };
 
