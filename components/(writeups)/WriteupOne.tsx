@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const WriteupOnePage = () => {
     return (
-        <div className="flex flex-col items-center justify-center mb-96 mt-20">
+        <div className="flex flex-col items-center justify-center mb-20 mt-20">
             <Link href="https://skrctf.me/challenges#Schr%C3%B6dinger's%20Cat%202" target="_blank">
                 <h1 className="text-6xl font-bold underline mb-4">Schrödinger&apos;s Cat 2</h1>
             </Link>
@@ -57,7 +57,7 @@ const WriteupOnePage = () => {
                 width={400}
                 height={400}
                 unoptimized
-                className="rounded-2xl mt-12 text-center"
+                className="rounded-2xl text-center"
             />
                 <p className=" text-justify text-wrap text-lg font-DMS w-3/5 h-48">
                     <br/><br/>Doing of all that, you just need to convert the binary to ASCII using any binary to ASCII converter (RapidTables) and you will get the flag. The flag is <span className="font-bold">SKR&#123;R1gh7_or_Wr0nG&#125;</span>
