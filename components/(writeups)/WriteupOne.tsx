@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WriteupOne = () => {
+const WriteupOnePage = () => {
     return (
         <div>
             <h1>Schrödinger&apos;s Cat 2</h1>
@@ -10,4 +10,4 @@ const WriteupOne = () => {
     );
 };
 
-export default WriteupOne;
+export default WriteupOnePage;
