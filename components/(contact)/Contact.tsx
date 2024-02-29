@@ -2,6 +2,8 @@
 
 import axios from 'axios';
 import React, { useState, FormEvent } from 'react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 interface EmailParams {
     from_name: string;
@@ -40,8 +42,10 @@ export const ContactPage: React.FC = () => {
             setName('');
             setEmail('');
             setMessage('');
+            toast.success('Email sent successfully!');
         } catch (error) {
             console.error(error);
+            toast.error('Failed to send email.');
         }
     };
 
