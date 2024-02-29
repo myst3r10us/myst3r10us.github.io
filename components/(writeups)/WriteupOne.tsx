@@ -1,9 +1,12 @@
 import React from 'react';
+import Link from 'next/link';
 
 const WriteupOnePage = () => {
     return (
         <div className="flex flex-col items-center justify-center mb-20 mt-20">
-            <h1 className="text-6xl font-bold mb-4">Schrödinger&apos;s Cat 2</h1>
+            <Link href="https://skrctf.me/challenges#Schr%C3%B6dinger's%20Cat%202" target="_blank">
+                <h1 className="text-6xl font-bold underline mb-4">Schrödinger&apos;s Cat 2</h1>
+            </Link>
             <p className=" text-lg font-semibold mb-4">Miscellaneous category from SKRCTF.</p>
             <div className="flex flex-row mb-10">
                 <p className="mr-4 text-sm text-gray-500">Published on: February 29, 2024 10:00 AM</p>
