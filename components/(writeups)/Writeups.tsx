@@ -15,13 +15,13 @@ const WriteupsPage = () => {
   return (
     <div>
       <section className="mt-20 mb-40">
-        <h1 style={{ textAlign: 'center', fontSize: '36px', fontWeight: 'bold' }}>Writeups</h1>
+        <h1 style={{ textAlign: 'center', fontSize: '36px', fontWeight: 'bold' }}>CTF Writeups</h1>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <div style={{ width: '800px', margin: '20px', padding: '20px', border: '1px solid #ccc', borderRadius: '5px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)', ...writeupStyles[0] }}>
             <h2 style={{ marginBottom: '10px', fontSize: '24px', fontWeight: 'bold' }}>{writeups[0].title}</h2>
             <p style={{ fontSize: '16px' }}>{writeups[0].content}</p>
             <Link href="/writeups/writeup1" legacyBehavior passHref>
-              <button style={{ marginTop: '10px', padding: '8px 16px', backgroundColor: '#007bff', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>View Solution</button>
+              <button style={{ marginTop: '10px', padding: '8px 16px', backgroundColor: '#007bff', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold' }}>View Solution</button>
             </Link>
           </div>
         </div>
