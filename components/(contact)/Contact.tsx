@@ -66,7 +66,7 @@ export const ContactPage: React.FC = () => {
     return (    
         <form onSubmit={handleSubmit} className='w-full max-w-sm mx-auto bg-white shadow-md rounded-[35px] px-8 pt-6 pb-8 mb-36 mt-20'>
             <div className='mb-4'>
-                <label className='block text-gray-500    font-bold mb-1' htmlFor='name'>
+                <label className='block text-gray-500 font-bold mb-1' htmlFor='name'>
                     Your Name
                 </label>
                 <input
