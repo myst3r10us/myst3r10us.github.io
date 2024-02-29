@@ -16,7 +16,9 @@ const WriteupOnePage = () => {
             <p className=" text-justify text-wrap text-lg font-DMS w-3/5 h-48">
                 One of my favorite CTF challenges in SKRCTF and I am so happy that I could solve this fun challenge.
                 Before that, I suggest you to do Schrödinger&apos;s Cat 1 first to get an idea of this 2nd challenge and my solution <br/> <span className="font-bold font-DMS">(Schrödinger&apos;s Cat 1 Challenge Link: <Link className="underline" href="https://skrctf.me/challenges#Schr%C3%B6dinger's%20Cat" target="_blank">here</Link>)</span> 
-                <br/><br/>How do I find out the answer/flag? It is actually simple but quite a lengthy process.
+                <br/><br/>How do I find out the answer/flag? It is actually simple but quite a lengthy process. I will try my best to explain it.
+
+                
             </p>
 
 
