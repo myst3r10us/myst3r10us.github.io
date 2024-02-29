@@ -57,14 +57,14 @@ export const ContactPage: React.FC = () => {
         setMessage(e.target.value);
     };
 
-    return (
-        <form onSubmit={handleSubmit} className='w-full max-w-sm mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-36 mt-20'>
+    return (    
+        <form onSubmit={handleSubmit} className='w-full max-w-sm mx-auto bg-white shadow-md rounded-[35px] px-8 pt-6 pb-8 mb-36 mt-20'>
             <div className='mb-4'>
-                <label className='block text-gray-500 font-bold mb-1' htmlFor='name'>
+                <label className='block text-gray-500    font-bold mb-1' htmlFor='name'>
                     Your Name
                 </label>
                 <input
-                    className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+                    className='shadow appearance-none border rounded w-full py-2 px-3 text-slate-100 leading-tight focus:outline-none focus:shadow-outline bg-slate-700'
                     id='name'
                     type='text'
                     placeholder='Your Name'
@@ -77,7 +77,7 @@ export const ContactPage: React.FC = () => {
                     Your Email
                 </label>
                 <input
-                    className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+                    className='shadow appearance-none border rounded w-full py-2 px-3 text-slate-100 leading-tight focus:outline-none focus:shadow-outline bg-slate-700'
                     id='email'
                     type='email'
                     placeholder='Your Email'
@@ -90,7 +90,7 @@ export const ContactPage: React.FC = () => {
                     Message
                 </label>
                 <textarea
-                    className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+                    className='shadow appearance-none border rounded w-full py-2 px-3 text-slate-100 leading-tight focus:outline-none focus:shadow-outline bg-slate-700'
                     id='message'
                     cols={30}
                     rows={10}
@@ -101,7 +101,7 @@ export const ContactPage: React.FC = () => {
             </div>
             <button
                 type='submit'
-                className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'
+                className='bg-sky-900 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'
             >
                 Send Email
             </button>
