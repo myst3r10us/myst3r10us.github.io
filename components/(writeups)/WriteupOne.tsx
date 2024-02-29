@@ -28,14 +28,6 @@ const WriteupOnePage = () => {
                 <br/><br/>How do I find out the answer/flag? It is actually simple but quite a lengthy process. I will try my best to explain it in detail.
                 <br/><br/>At the beginning, I just play around this guessing game by entering 1 or 2 as you can see in the terminal screenshot below.
             </p>
-            <Image
-                src="https://i.imgur.com/EPmAu8b.png"
-                alt="Schrödinger's Cat 2"
-                width={400}
-                height={400}
-                unoptimized
-                className="rounded-2xl mt-24 text-center"
-            />
             <p className=" text-justify text-wrap text-lg font-DMS w-3/5 h-48">
                 <br/><br/>Of course, initially I thought it is randomized until I restarted the game and tried countless times like a noob. Only to realize it is a fixed question and answer with that specific pattern. And I also realized that since the result is either 1 or 2 (alive or dead) can be interpreted as true or false in boolean and binary. So I come up with this idea 0 for Wrong (Dead) and 1 for Right (Alive)
                 <br/><br/>From that information, we can find out SKR{} in binary format which are 01010011 01001011 01010010 01111011 01111101.
@@ -46,12 +38,30 @@ const WriteupOnePage = () => {
                 width={400}
                 height={400}
                 unoptimized
-                className="rounded-2xl mt-24 text-center"
+                className="rounded-2xl mt-12 text-center"
             />
             <p className=" text-justify text-wrap text-lg font-DMS w-3/5 h-48">
-                <br/><br/>Using the information and same idea to find the right answer from the correct answer (from the bot) and 
-    
+                <br/><br/>Using the information and same idea to find the right answer from the correct answer (from the bot) and you will get something like what I did.
             </p>
+            <Image
+                src="https://i.imgur.com/yOZc8DH.png"
+                alt="Schrödinger's Cat 2"
+                width={400}
+                height={400}
+                unoptimized
+                className="rounded-2xl mt-12 text-center"
+            />
+            <Image
+                src="https://i.imgur.com/4o2lwlm.png"
+                alt="Schrödinger's Cat 2"
+                width={400}
+                height={400}
+                unoptimized
+                className="rounded-2xl mt-12 text-center"
+            />
+                <p className=" text-justify text-wrap text-lg font-DMS w-3/5 h-48">
+                    <br/><br/>Doing of all that, you just need to convert the binary to ASCII and you will get the flag. The flag is <span className="font-bold">SKR_N0_On3_Und3rst4ndS_Qu4ntum</span> 
+                </p>     
         </div>
     );
 };
