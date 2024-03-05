@@ -22,3 +22,10 @@ git remote -v
 
 
 ```
+
+
+https://www.freecodecamp.org/news/error-failed-to-push-some-refs-to-how-to-fix-in-git/
+
+
+CTFTeam:
+myst3r10us.github.io: https://github.com/myst3r10us/myst3r10us.github.io.git
