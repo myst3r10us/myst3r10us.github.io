@@ -1,2 +1,24 @@
 Current supporting desktop/laptop users.
 Mobile users will need to take a while. Very sorry!
+
+
+-> myst3r10us.github.io
+
+
+```
+
+git remote -v
+# View existing remotes
+# origin  https://github.com/user/repo.git (fetch)
+# origin  https://github.com/user/repo.git (push)
+
+git remote set-url origin https://github.com/user/repo2.git
+# Change the 'origin' remote's URL
+
+git remote -v
+# Verify new remote URL
+# origin  https://github.com/user/repo2.git (fetch)
+# origin  https://github.com/user/repo2.git (push)
+
+
+```
